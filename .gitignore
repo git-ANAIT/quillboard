@@ -1,0 +1,25 @@
+*.iml
+.gradle/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+keystore.properties
+*.jks
+*.keystore
+data-src/count_1w.txt
+data-src/words_alpha.txt
+.corpus/
+
+# Node tooling for the prototype test suite
+node_modules/
+package-lock.json.bak
+
+# Build outputs and local signing material
+artifacts/*.apk
+local.properties

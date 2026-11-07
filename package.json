@@ -1,0 +1,20 @@
+{
+  "name": "quillboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Quillboard — the offline AI keyboard, by Clear Theory. Tooling for the language-pack pipeline and the browser prototype's test suite.",
+  "license": "Apache-2.0",
+  "author": "Clear Theory",
+  "scripts": {
+    "build:data": "python3 tools/build_language_data.py",
+    "build:demo": "python3 tools/build_demo.py",
+    "test:engine": "node tools/test_engine.js",
+    "test:ui": "node tools/ui_test.js",
+    "test": "node tools/test_engine.js && node tools/ui_test.js",
+    "export:tones": "node tools/export_tone_rules.js",
+    "export:typos": "node tools/export_typos.js"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  }
+}
